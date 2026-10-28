@@ -32,6 +32,21 @@ Windows machines. Any free port works as long as `frontend/src/lib/api.js` match
 pytest
 ```
 
+## Notebooks
+
+`notebooks/` must run on the project venv, not the machine's global Python (the global 3.12 here has
+`transformers` but no `torch`). Register the kernel once:
+
+```bash
+.venv\Scripts\python.exe -m ipykernel install --user --name truthlens-venv --display-name "TruthLens (venv backend)"
+```
+
+Then select **TruthLens (venv backend)** in Jupyter/VS Code, or execute headless:
+
+```bash
+.venv\Scripts\jupyter.exe nbconvert --to notebook --execute --inplace --ExecutePreprocessor.kernel_name=truthlens-venv notebooks\01_test_nli.ipynb
+```
+
 ## Layout
 
 ```
