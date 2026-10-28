@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+node_modules/
+dist/
+build/
+
+# ML artifacts (large files)
+backend/data/raw/
+backend/data/indexes/
+backend/data/processed/
+*.bin
+*.pkl
+*.faiss
+
+# IDE
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
