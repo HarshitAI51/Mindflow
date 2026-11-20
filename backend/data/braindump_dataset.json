@@ -1,0 +1,854 @@
+[
+  {
+    "input": "ugh today's been so chaotic. Need to submit the ML assignment by Friday 11:59pm, that's URGENT because sir said no late submissions. Call mom tonight around 7 too. Dentist is Monday at 3pm and I need to buy groceries sometime this weekend. Also I still haven't watched that movie everyone keeps talking about lol.",
+    "output": [
+      {
+        "task": "Submit ML assignment",
+        "datetime": "2026-10-30 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Call mom",
+        "datetime": "2026-10-29 19:00",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Dentist appointment",
+        "datetime": "2026-11-02 15:00",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Buy groceries",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Tomorrow is going to be packed. I have a team meeting at 10am and need to send the project report before 5pm, please don't let me forget. Also reply to Rahul whenever I get a minute. My laptop fan has been making the weirdest sound lately, maybe I should clean it.",
+    "output": [
+      {
+        "task": "Attend team meeting",
+        "datetime": "2026-10-30 10:00",
+        "type": "APPOINTMENT",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Send project report",
+        "datetime": "2026-10-30 17:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Reply to Rahul",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Clean laptop",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "URGENT!! Pay electricity bill today before 8pm or my dad is going to be annoyed again 😭. Need to pick up my prescription at the pharmacy tomorrow afternoon, and I promised to help Neha with her slides next week. Also why does every app need a subscription now?",
+    "output": [
+      {
+        "task": "Pay electricity bill",
+        "datetime": "2026-10-29 20:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Pick up prescription",
+        "datetime": "2026-10-30 15:00",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Help Neha with slides",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "input": "I can't keep delaying this. Finish the database assignment by Sunday at 6pm, then revise operating systems for the exam on Tuesday at 9am. Need to wash my clothes tonight as well. Might go for badminton with the guys if it doesn't rain.",
+    "output": [
+      {
+        "task": "Finish database assignment",
+        "datetime": "2026-11-01 18:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Revise operating systems",
+        "datetime": "2026-11-03 09:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Wash clothes",
+        "datetime": "2026-10-29 20:00",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Play badminton",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Monday at 11 I have my project guide meeting, and before that I should prepare the slides. The internship application closes next Wednesday at midnight so that one's pretty important. Also order a new mouse sometime this week because mine keeps double-clicking. Had the best chai today btw.",
+    "output": [
+      {
+        "task": "Attend project guide meeting",
+        "datetime": "2026-11-02 11:00",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Prepare meeting slides",
+        "datetime": "2026-11-02 10:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Submit internship application",
+        "datetime": "2026-11-04 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Order a new mouse",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Tomorrow morning remind me to email the professor about my attendance shortage. I have to pay the hostel fee by the 5th of November, HIGH priority, and book train tickets for December as soon as possible. My roommate has been playing music at 2am again, I am so done.",
+    "output": [
+      {
+        "task": "Email professor about attendance shortage",
+        "datetime": "2026-10-30 09:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Pay hostel fee",
+        "datetime": "2026-11-05 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Book December train tickets",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  {
+    "input": "I need to return the library books by Friday evening, preferably before 6. Then on Saturday at 4pm there's a badminton match. Pick up some snacks before the match and clean my desk when I get back. I swear my desk is becoming a landfill.",
+    "output": [
+      {
+        "task": "Return library books",
+        "datetime": "2026-10-30 18:00",
+        "type": "DEADLINE",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Attend badminton match",
+        "datetime": "2026-10-31 16:00",
+        "type": "APPOINTMENT",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Buy snacks",
+        "datetime": "2026-10-31 15:00",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Clean desk",
+        "datetime": "2026-10-31 19:00",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Bro I forgot about the group presentation. We present on Thursday 5 November at 2pm and my part needs to be ready the day before. Also schedule a haircut for sometime next week, call the internet provider because the Wi-Fi keeps dying, and maybe start that machine learning course I bought three months ago.",
+    "output": [
+      {
+        "task": "Prepare group presentation section",
+        "datetime": "2026-11-04 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Attend group presentation",
+        "datetime": "2026-11-05 14:00",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Schedule haircut",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Call internet provider",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Start machine learning course",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Pay rent URGENTLY tomorrow by noon. I also have a dentist follow-up on 9 November at 4:30pm, and I should buy a birthday gift for my sister before Saturday. Need to get back into the gym routine too. This week is already exhausting and it's only Thursday.",
+    "output": [
+      {
+        "task": "Pay rent",
+        "datetime": "2026-10-30 12:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Attend dentist follow-up",
+        "datetime": "2026-11-09 16:30",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Buy sister's birthday gift",
+        "datetime": "2026-10-30 23:59",
+        "type": "DEADLINE",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Resume gym routine",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Next week is going to be rough. Finish the research paper by Wednesday night, attend the career counselling session on Tuesday at 1pm, and send my resume to the placement coordinator by Monday 5pm. I should probably clean up my GitHub profile too. Anyone else feel like the semester is moving too fast?",
+    "output": [
+      {
+        "task": "Finish research paper",
+        "datetime": "2026-11-04 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Attend career counselling session",
+        "datetime": "2026-11-03 13:00",
+        "type": "APPOINTMENT",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Send resume to placement coordinator",
+        "datetime": "2026-11-02 17:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Update GitHub profile",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Don't forget to cancel the old subscription before it renews tomorrow at midnight. Pick up my parcel from the post office on Friday after class, and message Arjun about splitting the cab fare. I have no idea where my charger went. Again.",
+    "output": [
+      {
+        "task": "Cancel old subscription",
+        "datetime": "2026-10-29 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Pick up parcel",
+        "datetime": "2026-10-30 16:00",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Message Arjun about cab fare",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "URGENT: the client needs the edited video by Friday 7pm. I need to export it, check the audio levels, and upload the final version before sending the link. Also invoice them by Monday. The footage they sent is actually pretty good, surprisingly.",
+    "output": [
+      {
+        "task": "Export edited video",
+        "datetime": "2026-10-30 17:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Check audio levels",
+        "datetime": "2026-10-30 17:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Upload final video and send link",
+        "datetime": "2026-10-30 19:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Send client invoice",
+        "datetime": "2026-11-02 23:59",
+        "type": "DEADLINE",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "input": "Tomorrow at 8am I have a blood test, so I need to check the lab instructions tonight. Submit the scholarship form by 31 October at 11:59pm. Also get some fruit and milk on the way back. I really need to stop sleeping so late.",
+    "output": [
+      {
+        "task": "Check lab instructions",
+        "datetime": "2026-10-29 21:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Attend blood test",
+        "datetime": "2026-10-30 08:00",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Submit scholarship form",
+        "datetime": "2026-10-31 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Buy fruit and milk",
+        "datetime": "2026-10-30 09:00",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Sometime this weekend I want to reorganize my room and back up my laptop. But the main thing is to submit the internship coding challenge by Sunday 10pm. Ask Priya if she's free for coffee on Saturday around 5. My playlist has been on repeat for six hours straight.",
+    "output": [
+      {
+        "task": "Reorganize room",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Back up laptop",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Submit internship coding challenge",
+        "datetime": "2026-11-01 22:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Ask Priya about coffee",
+        "datetime": "2026-10-31 17:00",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "I have a meeting with my manager next Monday at 10:30am. Need to prepare the sprint update before that, and the quarterly report is due on 6 November. Also refill my metro card and return the book I borrowed from Karan. I should really learn to say no to extra work.",
+    "output": [
+      {
+        "task": "Attend manager meeting",
+        "datetime": "2026-11-02 10:30",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Prepare sprint update",
+        "datetime": "2026-11-02 09:30",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Submit quarterly report",
+        "datetime": "2026-11-06 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Refill metro card",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Return book to Karan",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "I need to finish the UI redesign by Friday afternoon, preferably 3pm, then show the prototype to the team at 4pm. Buy a USB-C cable tomorrow because mine is damaged. Oh, and I finally figured out why the layout was breaking on smaller screens!",
+    "output": [
+      {
+        "task": "Finish UI redesign",
+        "datetime": "2026-10-30 15:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Present prototype to team",
+        "datetime": "2026-10-30 16:00",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Buy USB-C cable",
+        "datetime": "2026-10-30 23:59",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "input": "URGENT, my passport appointment is on 12 November at 9:15am. Need to print the application and arrange the required documents at least a day before. Pay the phone bill by tomorrow evening too. I still haven't decided where I want to travel next year.",
+    "output": [
+      {
+        "task": "Attend passport appointment",
+        "datetime": "2026-11-12 09:15",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Print passport application",
+        "datetime": "2026-11-11 23:59",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Arrange passport documents",
+        "datetime": "2026-11-11 23:59",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Pay phone bill",
+        "datetime": "2026-10-30 18:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  {
+    "input": "This is a reminder that I need to register for the hackathon before registrations close on 8 November at 11:59pm. Ask the team who is handling the backend by tomorrow, and spend an hour reviewing the API docs this weekend. I can't believe we agreed to build the whole thing in 24 hours.",
+    "output": [
+      {
+        "task": "Register for hackathon",
+        "datetime": "2026-11-08 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Ask team about backend ownership",
+        "datetime": "2026-10-30 23:59",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Review API documentation",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "input": "Tomorrow at 6pm, call the bank about the failed transaction. I also need to book a haircut before my cousin's wedding on 14 November, and send the wedding RSVP by 2 November. The weather has been so random lately, sunny one minute and raining the next.",
+    "output": [
+      {
+        "task": "Call bank about failed transaction",
+        "datetime": "2026-10-30 18:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Book haircut",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Send wedding RSVP",
+        "datetime": "2026-11-02 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  {
+    "input": "I should probably meal prep on Sunday afternoon, maybe around 2. Finish the statistics worksheet before Monday's class at 9am, and send my professor the project proposal by Saturday noon. Also order groceries because I'm running out of literally everything.",
+    "output": [
+      {
+        "task": "Meal prep",
+        "datetime": "2026-11-01 14:00",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Finish statistics worksheet",
+        "datetime": "2026-11-02 09:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Send project proposal to professor",
+        "datetime": "2026-10-31 12:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Order groceries",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Book a dentist appointment sometime next week, my tooth has been hurting a little. Send the client the revised contract by Friday at 2pm and remember to charge my headphones tonight. I finally got a good night's sleep yesterday and feel human again.",
+    "output": [
+      {
+        "task": "Book dentist appointment",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Send revised contract to client",
+        "datetime": "2026-10-30 14:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Charge headphones",
+        "datetime": "2026-10-29 21:00",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "The team demo is on Wednesday 4 November at 11am. Need to test all the main flows on Tuesday, fix the login bug ASAP, and update the README before the demo. Also maybe get some coffee beans because I'm spending way too much at cafes.",
+    "output": [
+      {
+        "task": "Attend team demo",
+        "datetime": "2026-11-04 11:00",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Test main application flows",
+        "datetime": "2026-11-03 23:59",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Fix login bug",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Update README",
+        "datetime": "2026-11-03 23:59",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Buy coffee beans",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "My sister's birthday is next Saturday, 7 November, so order her gift by Thursday evening. Call her on the day around 10am. Need to renew my driving licence before the end of November, not urgent today but don't forget. Family group chat has already started arguing about dinner plans lol.",
+    "output": [
+      {
+        "task": "Order sister's birthday gift",
+        "datetime": "2026-11-05 18:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Call sister for birthday",
+        "datetime": "2026-11-07 10:00",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Renew driving licence",
+        "datetime": "2026-11-30 23:59",
+        "type": "DEADLINE",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "input": "Submit the reimbursement claim by 3 November at 5pm. I also have a project sync tomorrow at 12:30pm and should send the updated spreadsheet to the team before that. Replace my mouse batteries whenever. I think I need a proper break from staring at spreadsheets all day.",
+    "output": [
+      {
+        "task": "Submit reimbursement claim",
+        "datetime": "2026-11-03 17:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Attend project sync",
+        "datetime": "2026-10-30 12:30",
+        "type": "APPOINTMENT",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Send updated spreadsheet to team",
+        "datetime": "2026-10-30 12:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Replace mouse batteries",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "I need to prepare for the AI exam on 10 November at 9am, start revising this weekend and finish all the notes by Monday night. Ask the professor tomorrow if the formula sheet is allowed. Also my headphones finally stopped disconnecting, apparently the cable was loose.",
+    "output": [
+      {
+        "task": "Revise for AI exam",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Finish AI exam notes",
+        "datetime": "2026-11-02 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Ask professor about formula sheet",
+        "datetime": "2026-10-30 23:59",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Attend AI exam",
+        "datetime": "2026-11-10 09:00",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      }
+    ]
+  },
+  {
+    "input": "Please remind me to send the signed offer letter to HR by Friday 1pm. The onboarding call is Monday at 2:30pm. I should also set up my work email and read the employee handbook sometime before then. Pretty excited but also nervous about starting.",
+    "output": [
+      {
+        "task": "Send signed offer letter to HR",
+        "datetime": "2026-10-30 13:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Attend onboarding call",
+        "datetime": "2026-11-02 14:30",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Set up work email",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Read employee handbook",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "input": "URGENT, the website domain renews on 1 November and I need to make sure payment goes through before then. Back up the database tonight, check SSL expiry, and ask the hosting provider about the sudden increase in bandwidth. I hate dealing with billing dashboards.",
+    "output": [
+      {
+        "task": "Renew website domain",
+        "datetime": "2026-11-01 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Back up database",
+        "datetime": "2026-10-29 21:00",
+        "type": "TASK",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Check SSL certificate expiry",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Contact hosting provider about bandwidth",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "input": "Tomorrow after lunch, go to the bank and update my address. Submit the lab record by Saturday 11:59pm and print the assignment before leaving for college. Maybe meet the guys for dinner on Sunday if everyone's free. I really need a weekend with absolutely nothing planned.",
+    "output": [
+      {
+        "task": "Update address at bank",
+        "datetime": "2026-10-30 14:00",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Submit lab record",
+        "datetime": "2026-10-31 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Print assignment",
+        "datetime": "2026-10-30 09:00",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Meet friends for dinner",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      }
+    ]
+  },
+  {
+    "input": "Need to finish the portfolio case study by 15 November, ideally before that so I can apply to internships. Schedule a feedback call with my mentor next Wednesday at 6pm and update my resume sometime this weekend. Also I found an amazing new font today and now I want to redesign everything.",
+    "output": [
+      {
+        "task": "Finish portfolio case study",
+        "datetime": "2026-11-15 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Attend mentor feedback call",
+        "datetime": "2026-11-04 18:00",
+        "type": "APPOINTMENT",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Update resume",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  {
+    "input": "Okay final list before I forget everything: finish the client presentation by tomorrow 4pm, attend the review meeting tomorrow at 5pm, pay my credit card bill by 4 November, and schedule a haircut whenever I get time. Also call Dad tonight, buy groceries this weekend, and please remind me to take a break because I've been working nonstop for days.",
+    "output": [
+      {
+        "task": "Finish client presentation",
+        "datetime": "2026-10-30 16:00",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Attend review meeting",
+        "datetime": "2026-10-30 17:00",
+        "type": "APPOINTMENT",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Pay credit card bill",
+        "datetime": "2026-11-04 23:59",
+        "type": "DEADLINE",
+        "priority": "HIGH"
+      },
+      {
+        "task": "Schedule haircut",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Call Dad",
+        "datetime": "2026-10-29 19:00",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      },
+      {
+        "task": "Buy groceries",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "LOW"
+      },
+      {
+        "task": "Take a break",
+        "datetime": "FLEXIBLE",
+        "type": "TASK",
+        "priority": "MEDIUM"
+      }
+    ]
+  }
+]

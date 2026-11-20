@@ -11,13 +11,26 @@ def test_root():
     assert res.json()["service"] == "TruthLens"
 
 
-def test_verify_stub_contract():
-    res = client.post("/api/verify", json={"answer": "U-Net was introduced in 2015."})
+def test_verify_pipeline_contract():
+    res = client.post(
+        "/api/verify",
+        json={"answer": "The Edgar Awards are presented by the Mystery Writers of America."},
+    )
     assert res.status_code == 200
 
     data = res.json()
-    assert data["answer"] == "U-Net was introduced in 2015."
-    assert len(data["claims"]) == 2
-    assert data["claims"][0]["verdict"] == "SUPPORTED"
-    assert data["claims"][1]["verdict"] == "CONTRADICTED"
-    assert data["edges"][0] == {"from_node": "answer", "to_node": "c1"}
+    assert data["answer"] == "The Edgar Awards are presented by the Mystery Writers of America."
+    assert len(data["claims"]) >= 1
+
+    node_ids = {"answer"}
+    for claim in data["claims"]:
+        node_ids.add(claim["id"])
+        assert claim["verdict"] in {"SUPPORTED", "CONTRADICTED", "INSUFFICIENT_EVIDENCE"}
+        assert len(claim["evidence"]) >= 1
+        for ev in claim["evidence"]:
+            node_ids.add(ev["id"])
+
+    # Every graph edge must point at a real node, otherwise React Flow renders orphans.
+    for edge in data["edges"]:
+        assert edge["from_node"] in node_ids
+        assert edge["to_node"] in node_ids

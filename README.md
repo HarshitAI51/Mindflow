@@ -1,55 +1,108 @@
-# TruthLens
 
-Verify a free-text answer by breaking it into claims, retrieving evidence, and scoring each
-claim with an NLI model. The UI shows the answer → claims → evidence graph, colour-coded by verdict.
+MindFlow makes it easy to “let it all out”; to get everything you have going round and round in your heads out on paper and all in one place.
 
-## Repository layout
+It’s not too difficult to do work that you have to complete, but rather the hard part is to keep track of all the things that you need to remember, what is the first thing to do and what needs attention first.
 
-```
-truthlens/
-├── backend/    FastAPI + NLP pipeline (Python)
-├── frontend/   React + Vite + React Flow UI
-└── docs/       architecture.md, api_contract.md
-```
+With MindFlow you can write down everything in your own words just as you would talk normally. It converts unstructured text inputs into well-structured task lists with the corresponding priorities attached, the task dates, times and categories.
 
-## Quick start
+The idea here is quite simple: stop memorizing everything that you have in mind and see what you need to do next.
 
-### Backend
+How It Works
 
-```bash
+Write down your brain dump.
+
+MindFlow analyzes written text according to its NLP technology.
+
+It is able to find the separate tasks, their details from the written text.
+
+Tasks will be classified into the TASK, DEADLINE and APPOINTMENT categories. 
+
+Each task will receive its priority level rating either HIGH, MEDIUM or LOW.
+
+Dates and times are taken out and put into a standard format
+
+Repository layout
+
+mindflow/
+├── backend/       FastAPI + NLP pipeline (Python)
+├── frontend/      React + Vite + Tailwind CSS
+└── docs/          architecture.md, api_contract.md
+
+Quick start
+
+Backend
+
 cd backend
+
 python -m venv .venv
-.venv\Scripts\Activate.ps1        # Windows; Mac/Linux: source .venv/bin/activate
+
+# Windows
+.venv\Scripts\Activate.ps1
+
+# Mac/Linux
+source .venv/bin/activate
+
 pip install -r requirements.txt
+
 python -m spacy download en_core_web_sm
-uvicorn app.main:app --reload --port 8001
-```
 
-Swagger UI: http://localhost:8001/docs
+uvicorn app.main:app --reload
 
-> Port 8001 is used because `wslrelay.exe` (WSL localhost forwarding) occupies 127.0.0.1:8000 on
-> Windows dev machines and swallows requests. To go back to 8000, drop `--port 8001` and change
-> the `baseURL` in `frontend/src/lib/api.js`.
+Frontend
 
-### Frontend
-
-```bash
 cd frontend
+
 npm install
 npm run dev
-```
 
-App: http://localhost:5173 — paste any text, click **Verify**, and the API response is printed as JSON.
+NLP pipeline
 
-## Status
+MindFlow employs a hybrid NLP model, which brings together the pre-trained English model of spaCy and customized extraction rules.
 
-Session 1 complete: architecture, folder structure, API contract, and an end-to-end working
-stack against a stub `POST /api/verify`.
+There are main parts of the pipeline as follows:
 
-Still to build: FEVER download + evidence corpus, claim extractor, BM25/FAISS indexes,
-NLI verifier, orchestrator, React Flow graph UI, evaluation.
+Tokenization breaks the input into several tokens.
 
-## Docs
+POS tagging identifies the parts of speech of the words, i.e., nouns and verbs.
 
-- [Architecture](docs/architecture.md)
-- [API contract](docs/api_contract.md)
+Lemmatization finds the base forms of the words.
+
+Dependency Parsing is used to identify the connections between actions and action-related words.
+
+Named Entity Recognition detects the entities found useful such as dates and times.
+
+Temporal Extraction employs dateparser and customized logic to resolve the phrases such as "tomorrow," "next Friday," "5 PM" and others.
+
+Rule-based classification identifies type and priority of tasks based on certain linguistic markers and own rules.
+
+Tech stack
+
+Backend
+
+Python
+
+FastAPI
+
+spaCy
+
+en_core_web_sm
+
+dateparser
+
+Regex and custom NLP rules
+
+Pydantic
+
+Frontend
+
+React
+
+Vite
+
+Tailwind CSS
+
+Project goal
+
+MindFlow isn't about making another complicated task manager.
+
+It's about making it easier to get started when your head is full of things to do. Write everything down, see it organized, and focus on what comes next.

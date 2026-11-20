@@ -2,9 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  background: #0f1419;
-  color: #e5e7eb;
-  font-family: system-ui, sans-serif;
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F1D9;
+    color: #155A43;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Retro Display Text utility */
+.font-display {
+  font-family: 'Dela Gothic One', 'Archivo Black', cursive, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Scrollbar in MindFlow Green */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F1D9;
+}
+::-webkit-scrollbar-thumb {
+  background: #A9DDAE;
+  border-radius: 9999px;
+  border: 2px solid #F5F1D9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #269B68;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.04); opacity: 1; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
 }
